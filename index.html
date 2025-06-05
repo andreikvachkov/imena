@@ -8,14 +8,26 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+
 
 
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="main-page">
     <header>
         <div class="container">
             <div class="header__wrap">
@@ -29,9 +41,9 @@
                     <a href="" class="header__tel-btn">
                         +7 899 789 85 85
                     </a>
-                    <a href="" class="header__feedback-btn">
+                    <button class="header__feedback-btn">
                         Заказать звонок
-                    </a>
+                    </button>
                     <button class="header__menu-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                             <path d="M5.625 22.5H39.375" stroke="white" stroke-width="2" stroke-linecap="square"
@@ -49,7 +61,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero__wrap">
-                <h1 class="hero__title">
+                <h1 class="hero__title split-lines-words anim-split-text">
                     МЕСТО, ГДЕ ЗАЖИГАЮТСЯ
                     НОВЫЕ ИМЕНА
                 </h1>
@@ -66,40 +78,48 @@
         <div class="container">
             <div class="two-section__wrap">
                 <div class="two-section__left">
+                    <div class="two-section__left__right-border"></div>
                     <div class="two-section__left__line"></div>
-                    <div class="two-section__left_top">
+                    <div class="two-section__left_top gradient-text">
                         Добро пожаловать в жилой комплекс «Имена» — идеальное место для создания семейного
                         очага, осуществления задуманных планов и реализации амбиций.
                     </div>
-                    <h2 class="two-section__left__title">
+                    <h2 class="two-section__left__title split-lines-words anim-split-text">
                         идеальное место для создания семейного очага
                     </h2>
-                    <div class="two-section__left_botoom">
+                    <div class="two-section__left_botoom gradient-text">
                         Здесь, на границе современного мегаполиса
                         и первозданной природы, открываются миллионы возможностей, и становится
                         легко выбрать безупречный сценарий жизни.
                     </div>
                 </div>
                 <div class="two-section__right">
-                    <img src="assets/images/two-section_img.png" alt="">
+                    <div class="two-section__right__img">
+                        <img src="assets/images/two-section_img.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="three-section">
         <img src="assets/images/three-section_bg-ico.svg" alt="" class="three-section__bg-ico">
+        <img src="assets/images/three-section_bg-ico_mob.svg" alt="" class="three-section__bg-ico_mob">
         <div class="container">
             <div class="three-section__wrap">
                 <div class="three-section__left">
-                    <img src="assets/images/three-section_img.png" alt="">
+                    <div class="three-section__left__img">
+                        <img src="assets/images/three-section_img.png" alt="">
+                    </div>
                 </div>
                 <div class="three-section__right">
                     <img src="assets/images/three-section_ico.svg" alt="" class="three-section__right__ico">
                     <div class="three-section__right__content">
                         <div class="three-section__right__img">
-                            <img src="assets/images/three-section_img2.png" alt="">
+                            <div class="three-section__right__img__container">
+                                <img src="assets/images/three-section_img2.png" alt="">
+                            </div>
                         </div>
-                        <div class="three-section__right__text">
+                        <div class="three-section__right__text gradient-text">
                             Вокруг «ЖК Имена» будут построены новые дорожные маршруты и линия трамвая, которая будет
                             интегрирована <br>
                             в существующую сеть городского транспорта.
@@ -112,7 +132,7 @@
     <section class="four-section">
         <div class="container">
             <div class="four-section__wrap">
-                <div class="four-section__text">
+                <div class="four-section__text split-lines-words anim-split-text">
                     здесь открываются миллионы возможностей, и становится легко выбрать безупречный сценарий жизни
                 </div>
             </div>
@@ -122,28 +142,32 @@
         <div class="container">
             <div class="five-section__wrap">
                 <div class="five-section__left">
+                    <div class="five-section__left__right-border"></div>
                     <div class="five-section__left__line"></div>
-                    <div class="five-section__left_top">
+                    <div class="five-section__left_top gradient-text">
                         Жилой комплекс «Имена» расположился на правом берегу Невы, у подножия Невского лесопарка,
                         в центре грандиозного проекта нового района Санкт-Петербурга.
                     </div>
-                    <h2 class="five-section__left__title">
+                    <h2 class="five-section__left__title split-lines-words anim-split-text">
                         на границе с природой
                     </h2>
-                    <div class="five-section__left_botoom">
+                    <div class="five-section__left_botoom gradient-text">
                         В этой экологичной локации, всего в получасе от центра города, жители смогут наслаждаться
                         размеренной жизнью, прогуливаться по собственному бульвару или совершать ежедневные вылазки
                         в Невский лесопарк по выделенной экотропе.
                     </div>
                 </div>
                 <div class="five-section__right">
-                    <img src="assets/images/five-section.png" alt="">
+                    <div class="five-section__right__img">
+                        <img src="assets/images/five-section.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="map-section">
         <img src="assets/images/map.png" alt="" class="map-section__img">
+        <img src="assets/images/map_mob.png" alt="" class="map-section__img_mob">
         <div class="container">
             <div class="map-section__wrap">
                 <div class="map-section__content">
@@ -248,7 +272,7 @@
                         <ul>
                             <li>
                                 <div class="col">
-                                   НЕВСКИЙ ЛЕСОПАРК
+                                    НЕВСКИЙ ЛЕСОПАРК
                                 </div>
                                 <div class="col">
                                     5 мин
@@ -272,7 +296,7 @@
                             </li>
                             <li>
                                 <div class="col">
-                                   ЦАРСКОЕ СЕЛО
+                                    ЦАРСКОЕ СЕЛО
                                 </div>
                                 <div class="col">
                                     30 мин
@@ -338,6 +362,1870 @@
             </div>
         </div>
     </section>
+    <section class="genplan">
+        <div class="genplan__info">
+            <div class="genplan__info__text">
+                Для перемещения по инфраструктуре листайте вбок
+            </div>
+            <img src="assets/images/genplan_ico.png" alt="">
+        </div>
+        <div class="genplan__container">
+            <div class="genplan__wrap">
+                <img src="assets/images/genplan.png" alt="" class="genplan__bg">
+                <img src="assets/images/genplan_mob.png" alt="" class="genplan__bg__mob">
+                <div class="genplan__item genplan__item-1">
+                    1
+                </div>
+                <div class="genplan__item genplan__item-2">
+                    2
+                </div>
+                <div class="genplan__item genplan__item-3">
+                    3
+                </div>
+                <div class="genplan__item genplan__item-4">
+                    4
+                </div>
+                <div class="genplan__item genplan__item-5">
+                    5
+                </div>
+                <div class="genplan__item genplan__item-6">
+                    6
+                </div>
+                <div class="genplan__item genplan__item-7">
+                    7
+                </div>
+                <div class="genplan__item genplan__item-8">
+                    8
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="genplan__popup">
+        <button class="genplan__popup__close-mob">
+
+        </button>
+        <div class="genplan__popup__img">
+            <img src="assets/images/genplan_img.png" alt="">
+        </div>
+        <div class="genplan__popup__header">
+            <p class="name">
+                детская площадка
+            </p>
+            <p class="num">
+                1
+            </p>
+        </div>
+        <div class="genplan__popup__text">
+            Современный подход позволяет обеспечить ребят разных возрастов безопасным пространством для игр и познания
+            окружающего мира.
+        </div>
+    </div>
+    <section class="project-label">
+        <div class="container">
+            <div class="project-label__wrap">
+                <h2 class="project-label__title">
+                    цифры проекта
+                </h2>
+                <div class="project-label__main">
+                    <div class="project-label__item">
+                        <p class="name">
+                            60
+                        </p>
+                        <p class="text">
+                            Га общая площадь
+                        </p>
+                    </div>
+                    <div class="project-label__item">
+                        <p class="name">
+                            28
+                        </p>
+                        <p class="text">
+                            Литеров по 12-23 этажа
+                        </p>
+                    </div>
+                    <div class="project-label__item">
+                        <p class="name">
+                            17 394
+                        </p>
+                        <p class="text">
+                            Квартир
+                        </p>
+                    </div>
+                    <div class="project-label__item">
+                        <p class="name">
+                            3 657
+                        </p>
+                        <p class="text">
+                            Машино-мест <br>
+                            в многоуровневых паркингах
+                        </p>
+                    </div>
+                    <div class="project-label__item">
+                        <p class="name">
+                            1 170
+                        </p>
+                        <p class="text">
+                            Мест в школе
+                        </p>
+                    </div>
+                    <div class="project-label__item">
+                        <p class="name">
+                            4
+                        </p>
+                        <p class="text">
+                            Детских сада на 1 170 мест
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="advantages__top">
+            <div class="container">
+                <div class="advantages__top__wrap">
+                    <p class="advantages__top__name">
+                        преимущества
+                    </p>
+                    <div class="advantages__top__text split-lines-words anim-split-text">
+                        Все ключевые сферы жизни&nbsp;&mdash; от&nbsp;комфорта <br>
+                        и&nbsp;безопасности до&nbsp;досуга и&nbsp;развития&nbsp;&mdash; собраны для вас внутри жилого
+                        комплекса
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__main">
+            <div class="advantages__page-main advantages__page-1">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                сбалансированное развитие
+                            </p>
+                            <p class="advantages__page__num">
+                                01-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-main__content">
+                            <img src="assets/images/advantages-page1.png" alt="">
+                            <div class="advantages__page-main__text">
+                                <p>
+                                    жк «Имена» создан по принципу комплексного освоения территорий.
+                                </p>
+                                <p>
+                                    Проект предусматривает наполнение всех сфер жизни внутри жилого комплекса, без
+                                    необходимости покидать его пределы для закрытия бытовых нужд.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-2">
+                <img src="assets/images/advantages_bg.png" alt="" class="advantages__page-main__bg">
+                <img src="assets/images/ad2_bg_mob.png" alt="" class="advantages__page-2__bg_mob">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся на свежем воздухе
+                            </p>
+                            <p class="advantages__page__num">
+                                02-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-2__content">
+                            <div class="advantages__page-2__left">
+                                <h2 class="advantages__page-2__title">
+                                    комфортная среда для работы и&nbsp;отдыха на&nbsp;свежем воздухе
+                                </h2>
+                                <div class="advantages__page-2__text">
+                                    <p>
+                                        Вдоль зоны променада разместятся уютные лаунж-зоны и перголы с зарядками,
+                                        где можно
+                                        будет с комфортом поработать под шелест листвы или отдохнуть в тени деревьев.
+                                    </p>
+                                    <p>
+                                        Разноуровневая иллюминация позволит в любое время суток наслаждаться досугом
+                                        и играми на свежем воздухе, а умная подстветка дорожек обеспечить постоянное
+                                        освещение пути жителей.
+                                    </p>
+                                    <p>
+                                        Концепция трехуровневого озеленения поможет расставить акценты, зонировать
+                                        пространство и создать приватные уголки.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advantages__page-2__right">
+                                <div class="swiper advantages__page-2__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-2__slide-img ">
+                                                <img src="assets/images/ad2-1.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-2__slide__info">
+                                                <div class="advantages__page-2__slide-name">
+                                                    >1.2
+                                                </div>
+                                                <div class="advantages__page-2__slide-text">
+                                                    Протяженность бульвара
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-2__slide-img ">
+                                                <img src="assets/images/ad2-2.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-2__slide__info">
+                                                <div class="advantages__page-2__slide-name">
+                                                    2 ГА
+                                                </div>
+                                                <div class="advantages__page-2__slide-text">
+                                                    Площадь парка в центре
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-2__slide-img ">
+                                                <img src="assets/images/ad2-3.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-2__slide__info">
+                                                <div class="advantages__page-2__slide-name">
+                                                    WI-FI покрытие
+                                                </div>
+                                                <div class="advantages__page-2__slide-text">
+                                                    По всей территории
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-2__slide-img ">
+                                                <img src="assets/images/ad2-4.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-2__slide__info">
+                                                <div class="advantages__page-2__slide-name">
+                                                    умное освещение
+                                                </div>
+                                                <div class="advantages__page-2__slide-text">
+                                                    На территории комплекса
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-2__slide-img ">
+                                                <img src="assets/images/ad2-5.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-2__slide__info">
+                                                <div class="advantages__page-2__slide-name">
+                                                    Розетки для гаджетов
+                                                </div>
+                                                <div class="advantages__page-2__slide-text">
+                                                    В местах отдыха
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-3">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся без забот
+                            </p>
+                            <p class="advantages__page__num">
+                                03-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-3__content">
+                            <div class="advantages__page-3__left">
+                                <img src="assets/images/ad3.png" alt="">
+                            </div>
+                            <div class="advantages__page-3__right">
+                                <div class="advantages__page-3__right__line">
+
+                                </div>
+                                <div class="advantages__page-3__top">
+                                    <div class="advantages__page-3__top_left">
+                                        Первые этажи домов займут коммерческие помещения с магазинами, кафе и пекарнями,
+                                        развивающими секциями и пуктами выдачи маркетплейсов.
+                                    </div>
+                                    <div class="advantages__page-3__top_right">
+                                        <img src="assets/images/ad32.png" alt="">
+                                    </div>
+                                </div>
+                                <h2 class="advantages__page-3__title">
+                                    всё необходимое рядом с домом, сохраняя уют и приватность дворовой зоны
+                                </h2>
+                                <div class="advantages__page-3__bottom">
+                                    Закрыть любые бытовые вопросы, продумать сценарий ужина и заказать горячий завтрак
+                                    теперь легко, всё на расстоянии пары шагов. Входы в коммерцию будут расположены с
+                                    внешней стороны зданий, оставляя дворовую зону приватной
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-4">
+                <img src="assets/images/advantages_bg.png" alt="" class="advantages__page-main__bg">
+                <img src="assets/images/ad2_bg_mob.png" alt="" class="advantages__page-4__bg_mob">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся вместе
+                            </p>
+                            <p class="advantages__page__num">
+                                04-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-4__content">
+                            <div class="advantages__page-4__left">
+                                <h2 class="advantages__page-4__title">
+                                    всё для общения, творчества, развития и&nbsp;теплых семейных встреч под открытым
+                                    небом
+                                </h2>
+                                <div class="advantages__page-4__text">
+                                    <p>
+                                        В каждом квартале жилого комплекса «Имена» появится свой комьюнити-центр -
+                                        место,
+                                        где соседи могут общаться, делиться знаниями и опытом, учиться, отмечать
+                                        события,
+                                        отдыхать, а также развиваться в творчестве и бизнесе.
+                                    </p>
+                                    <p>
+                                        Стильные пространства подойдут для групповых занятий, от йоги до танцев, для
+                                        проведения мастер - классов и групповых игр, для уединенной работы, для
+                                        праздников и
+                                        камерных спектаклей.
+                                    </p>
+                                    <p>
+                                        Точкой притяжения в теплое время года станет летний кинотеатр, где для жителей
+                                        будут
+                                        проводиться показы фильмов и концерты.
+                                    </p>
+                                    <p>
+                                        А в специальной зоне ярмарки всегда можно будет приобрести свежие фермерские
+                                        продукты, порадовать себя и близких цветами и уникальными товарами ручной
+                                        работы.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advantages__page-4__right">
+                                <div class="swiper advantages__page-4__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-1.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    Студия танцев
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (01)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-2.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    коворкинг
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (02)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-3.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    арт пространство
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (03)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-4.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    мастерская
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (04)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-5.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    детский центр
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (05)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-6.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    ярмарка
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (06)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-7.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    летний кинотеатр
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (07)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-4__slide-img ">
+                                                <img src="assets/images/ad4-8.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-4__slide__info">
+                                                <div class="advantages__page-4__slide-name">
+                                                    переговорная
+                                                </div>
+                                                <div class="advantages__page-4__slide-text">
+                                                    (08)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-5">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся с детства
+                            </p>
+                            <p class="advantages__page__num">
+                                05-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-main__content">
+                            <img src="assets/images/ad55.png" alt="">
+                            <div class="advantages__page-main__text">
+                                <p>
+                                    Современный подход позволяет обеспечить ребят разных возрастов безопасным
+                                    пространством для игр и познания окружающего мира.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-6">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся, отдыхая
+                            </p>
+                            <p class="advantages__page__num">
+                                06-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-6__content">
+                            <div class="advantages__page-6__left">
+                                <img src="assets/images/ad2_bg_mob.png" alt="" class="advantages__page-6__bg_mob">
+                                <div class="advantages__page-6__left__line"></div>
+                                <div class="advantages__page-6__top">
+                                    Между работой и занятиями необходимо не забывать уделять внимание себе, правильно
+                                    восполнять энергию. Отдыху взрослых уделено особое внимание.
+                                </div>
+                                <h2 class="advantages__page-6__title">
+                                    изысканные пространства отдыха, где можно восстановить силы в атмосфере уединённого
+                                    комфорта
+                                </h2>
+                                <div class="advantages__page-6__bottom">
+                                    <div class="advantages__page-6__botoom_left">
+                                        <img src="assets/images/ad6.png" alt="">
+                                    </div>
+                                    <div class="advantages__page-6__bottom_right">
+                                        Дворовые пространства будут наполнены площадками для спокойного времяпровождения
+                                        на свежем воздухе. Удобные скамейки, уютные беседки создадут комфортную
+                                        атмосферу для расслабления после трудового дня.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__page-6__right">
+                                <img src="assets/images/ad62.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-7">
+                <img src="assets/images/advantages_bg.png" alt="" class="advantages__page-main__bg">
+                <img src="assets/images/ad2_bg_mob.png" alt="" class="advantages__page-7__bg_mob">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивайся в спорте
+                            </p>
+                            <p class="advantages__page__num">
+                                07-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-7__content">
+                            <div class="advantages__page-7__left">
+                                <h2 class="advantages__page-7__title">
+                                    все условия для гармоничного развития&nbsp;&mdash; от&nbsp;тихих практик йоги
+                                    до&nbsp;активных занятий спортом на&nbsp;свежем воздухе
+                                </h2>
+                                <div class="advantages__page-7__text">
+                                    <p>
+                                        Спортивное оснащение на территории комплекса позволяет развивать физическую
+                                        культуру
+                                        как для собственного удовольствия, так и профессионально.
+                                    </p>
+                                    <p>
+                                        Для силовых упражнений продуманы воркаут-площадки и многофункциональные
+                                        тренажеры
+                                        для разных возрастов
+                                    </p>
+                                    <p>
+                                        По периметру комплекса протянутся километры беговых дорожек с прорезиненным
+                                        покрытием и велотреки с профессиональным оборудованием для счета кругов.
+                                        Позаботиться о двухколесном друге позволят мобильные станции обслуживания
+                                        велосипедов.
+                                    </p>
+                                    <p>
+                                        Познать дзен и себя жители смогут в крытой зоне для занятий йогой, групповых
+                                        тренировок и медитаций.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advantages__page-7__right">
+                                <div class="swiper advantages__page-7__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-7__slide-img ">
+                                                <img src="assets/images/ad7-1.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-7__slide__info">
+                                                <div class="advantages__page-7__slide-name">
+                                                    воркаут
+                                                </div>
+                                                <div class="advantages__page-7__slide-text">
+                                                    (01)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-7__slide-img ">
+                                                <img src="assets/images/ad7-2.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-7__slide__info">
+                                                <div class="advantages__page-7__slide-name">
+                                                    тренажеры
+                                                </div>
+                                                <div class="advantages__page-7__slide-text">
+                                                    (02)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-7__slide-img ">
+                                                <img src="assets/images/ad7-3.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-7__slide__info">
+                                                <div class="advantages__page-7__slide-name">
+                                                    беговые дорожки
+                                                </div>
+                                                <div class="advantages__page-7__slide-text">
+                                                    (03)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-7__slide-img ">
+                                                <img src="assets/images/ad7-4.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-7__slide__info">
+                                                <div class="advantages__page-7__slide-name">
+                                                    велотрек
+                                                </div>
+                                                <div class="advantages__page-7__slide-text">
+                                                    (04)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="advantages__page-7__slide-img ">
+                                                <img src="assets/images/ad7-5.png" alt="">
+                                            </div>
+                                            <div class="advantages__page-7__slide__info">
+                                                <div class="advantages__page-7__slide-name">
+                                                    крытая зона йоги
+                                                </div>
+                                                <div class="advantages__page-7__slide-text">
+                                                    (05)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__page-main advantages__page-8">
+                <div class="container">
+                    <div class="advantages__page-main__wrap">
+                        <div class="advantages__page__header">
+                            <p class="advantages__page__name">
+                                развивай тех, кого приручил
+                            </p>
+                            <p class="advantages__page__num">
+                                08-08
+                            </p>
+                        </div>
+                        <div class="advantages__page-main__content">
+                            <img src="assets/images/ad8.png" alt="">
+                            <div class="advantages__page-main__text">
+                                <p>
+                                    На территории жилого комплекса «Имена» 5 просторных площадок для животных.
+                                </p>
+                                <p>
+                                    в комплексе предусмотрены площадки как для беззаботных игр, так и оснащенные
+                                    тренажерными комплексами - для тренировок и профессиональной дрессировки питомцев.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="four-section four-section_width">
+        <div class="container">
+            <div class="four-section__wrap">
+                <div class="four-section__text split-lines-words anim-split-text">
+                    Здесь предусмотрено всё и даже больше — чтобы каждый день наслаждаться уютом, безопасностью и
+                    уровнем жизни, достойным самого лучшего
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parking">
+        <div class="container">
+            <div class="parking__wrap">
+                <div class="parking__left">
+                    <div class="parking__left__img">
+                        <img src="assets/images/parking1.png" alt="">
+                    </div>
+                </div>
+                <div class="parking__center">
+                    <div class="parking__center__line-top"></div>
+                    <div class="parking__center__line-bottom"></div>
+                    <div class="parking__center__top gradient-text">
+                        Для удобного и безопасного хранения личного автотранспорта на территории комплекса предусмотрены
+                        многоуровневые крытые паркинги.
+                    </div>
+                    <h2 class="parking__title split-lines-words anim-split-text">
+                        Каждый житель комплекса будет гарантированно обеспечен машино-местом в крытом паркинге
+                    </h2>
+                    <div class="parking__center__bottom gradient-text">
+                        Общая вместимость паркинга составляет
+                        1 657 машино-мест, что позволяет комфортно размещать автомобили без перегрузки пространства.
+                    </div>
+                    <div class="parking__center__num">
+                        <p class="value">
+                            1 657
+                        </p>
+                        <p class="text">
+                            машино-мест
+                        </p>
+                    </div>
+                </div>
+                <div class="parking__right">
+                    <div class="parking__right__img">
+                        <img src="assets/images/parking2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="security">
+        <div class="security__top">
+            <div class="container">
+                <div class="security__top__wrap">
+                    <div class="security__top__text split-lines-words anim-split-text">
+                        Жилой комплекс дарит безупречное чувство защищённости — продуманная система безопасности для
+                        уверенности в каждом дне
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="security__img">
+            <img src="assets/images/security_img.png" alt="">
+        </div>
+        <div class="security__bottom">
+            <div class="container">
+                <div class="security__bottom__wrap">
+                    <div class="security__bottom__item">
+                        <div class="security__bottom__item__name">
+                            видеонаблюдение 24 часа
+                        </div>
+                        <div class="security__bottom__item__text">
+                            С автоматической фиксацией нарушения порядка
+                        </div>
+                    </div>
+                    <div class="security__bottom__item">
+                        <div class="security__bottom__item__name">
+                            закрытые дворы
+                        </div>
+                        <div class="security__bottom__item__text">
+                            С изолированной зоной без проезда автомобилей
+                        </div>
+                    </div>
+                    <div class="security__bottom__item">
+                        <div class="security__bottom__item__name">
+                            умный шлагбаум
+                        </div>
+                        <div class="security__bottom__item__text">
+                            С автоматической фиксацией нарушения
+                            с технологией распознавания госномера
+                        </div>
+                    </div>
+                    <div class="security__bottom__item">
+                        <div class="security__bottom__item__name">
+                            бесконтактные домофоны
+                        </div>
+                        <div class="security__bottom__item__text">
+                            С двусторонним видеовызовом и возможностью управления из мобильного приложения
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="design">
+        <div class="container">
+            <div class="design__wrap">
+                <div class="design__header">
+                    <h2 class="design__title">
+                        Дизайнерские холлы
+                    </h2>
+                    <div class="design__btn">
+                        <button class="design__swiper__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M8.42587 19.0517L7.48147 20L3 15.5L7.48147 11L8.42587 11.9483L5.55702 14.829H28V16.171H5.55702L8.42587 19.0517Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                        <button class="design__swiper__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M23.5741 19.0517L24.5185 20L29 15.5L24.5185 11L23.5741 11.9483L26.443 14.829H4V16.171H26.443L23.5741 19.0517Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="design__main">
+                    <div class="swiper design__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="design__slide-img ">
+                                    <img src="assets/images/design1.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design__slide-img">
+                                    <img src="assets/images/design2.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design__slide-img">
+                                    <img src="assets/images/design1.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design__slide-img">
+                                    <img src="assets/images/design2.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design__slide-img">
+                                    <img src="assets/images/design1.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design__slide-img">
+                                    <img src="assets/images/design2.png" alt="">
+                                </div>
+                                <div class="design__slide__info">
+                                    <div class="design__slide-name">
+                                        безбарьерная среда
+                                    </div>
+                                    <div class="design__slide-text">
+                                        Входы без ступеней и пандусов на уровне земли
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="layout">
+        <div class="layout__top">
+            <div class="container">
+                <div class="layout__top__wrap">
+                    <div class="layout__top__subtitle">
+                        Продуманные кладовые в цокольном этаже — элегантное решение для свободного, упорядоченного
+                        пространства в вашей квартире
+                    </div>
+                    <div class="layout__top__text">
+                        Освободить метры квартиры для комфортной жизни позволят просторные кладовые помещения в
+                        цокольном этаже. Организовать систему хранения, разместить крупногабаритные и сезонные вещи,
+                        например лыжи, сани или велосипед, теперь можно без труда.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout__img">
+            <img src="assets/images/layout_img.png" alt="">
+        </div>
+        <div class="layout__bottom">
+            <div class="container">
+                <div class="layout__bottom__wrap">
+                    <div class="layout__bottom__item layout__bottom__item-main">
+                        <div class="layout__bottom__item__name">
+                            квартиры
+                        </div>
+                        <div class="layout__bottom__item__bottom">
+                            <p class="num">
+                                20+
+                            </p>
+                            <div class="text">
+                                планировочных решений
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout__bottom__item">
+                        <div class="layout__bottom__item__text">
+                            Планировочные решения в жилом комплексе «Имена» позволяют реализовать любые сценарии жизни.
+                        </div>
+                    </div>
+                    <div class="layout__bottom__item">
+                        <div class="layout__bottom__item__text">
+                            Легко выбрать, что вам нужно, среди уютных компактных квартир и просторных вариантов.
+                        </div>
+                    </div>
+                    <div class="layout__bottom__item">
+                        <div class="layout__bottom__item__text">
+                            В комнатах правильной формы удобно расставлять мебель и декор.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="planirovka-slider">
+        <div class="container">
+            <div class="planirovka-slider__wrap">
+                <div class="planirovka-slider__header">
+                    <h2 class="planirovka-slider__title">
+                        планировочные решения
+                    </h2>
+                    <div class="planirovka-slider__btn">
+                        <button class="planirovka-slider__swiper__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M8.42587 19.0517L7.48147 20L3 15.5L7.48147 11L8.42587 11.9483L5.55702 14.829H28V16.171H5.55702L8.42587 19.0517Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                        <button class="planirovka-slider__swiper__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M23.5741 19.0517L24.5185 20L29 15.5L24.5185 11L23.5741 11.9483L26.443 14.829H4V16.171H26.443L23.5741 19.0517Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="planirovka-slider__room">
+                    <div class="radio-item">
+                        <input checked class="radio-input" id="planirovka-slider-1" name="planirovka-slider"
+                            type="radio" value="1-комнатные">
+                        <label class="radio-label" for="planirovka-slider-1">1-комнатные</label>
+                    </div>
+                    <div class="radio-item">
+                        <input class="radio-input" id="planirovka-slider-2" name="planirovka-slider" type="radio"
+                            value="2-комнатные">
+                        <label class="radio-label" for="planirovka-slider-2">2-комнатные</label>
+                    </div>
+                    <div class="radio-item">
+                        <input class="radio-input" id="planirovka-slider-3" name="planirovka-slider" type="radio"
+                            value="3-комнатные">
+                        <label class="radio-label" for="planirovka-slider-3">3-комнатные</label>
+                    </div>
+                </div>
+                <div class="planirovka-slider__main">
+                    <div class="swiper planirovka-slider__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="planirovka-slider__item">
+                                    <div class="planirovka-slider__item__content">
+                                        <div class="planirovka-slider__item__header">
+                                            <p class="corp">
+                                                корпус 5
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    2 подъезд
+                                                </li>
+                                                <li>
+                                                    2-10 этаж
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="planirovka-slider__item__img">
+                                            <img src="assets/images/plan-main.png" alt="">
+                                        </div>
+                                        <div class="planirovka-slider__item__characteristics">
+                                            <ul>
+                                                <li>
+                                                    <p class="room">
+                                                        1к
+                                                    </p>
+                                                    <p class="value">
+                                                        от 28.83 м2 до 40.22 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        2к
+                                                    </p>
+                                                    <p class="value">
+                                                        55.89 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        3к
+                                                    </p>
+                                                    <p class="value">
+                                                        74.58 м2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="planirovka-slider__item__btn">
+                                        персональное предложение
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="planirovka-slider__item">
+                                    <div class="planirovka-slider__item__content">
+                                        <div class="planirovka-slider__item__header">
+                                            <p class="corp">
+                                                корпус 5
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    2 подъезд
+                                                </li>
+                                                <li>
+                                                    2-10 этаж
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="planirovka-slider__item__img">
+                                            <img src="assets/images/plan-main.png" alt="">
+                                        </div>
+                                        <div class="planirovka-slider__item__characteristics">
+                                            <ul>
+                                                <li>
+                                                    <p class="room">
+                                                        1к
+                                                    </p>
+                                                    <p class="value">
+                                                        от 28.83 м2 до 40.22 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        2к
+                                                    </p>
+                                                    <p class="value">
+                                                        55.89 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        3к
+                                                    </p>
+                                                    <p class="value">
+                                                        74.58 м2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="planirovka-slider__item__btn">
+                                        персональное предложение
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="planirovka-slider__item">
+                                    <div class="planirovka-slider__item__content">
+                                        <div class="planirovka-slider__item__header">
+                                            <p class="corp">
+                                                корпус 5
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    2 подъезд
+                                                </li>
+                                                <li>
+                                                    2-10 этаж
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="planirovka-slider__item__img">
+                                            <img src="assets/images/plan-main.png" alt="">
+                                        </div>
+                                        <div class="planirovka-slider__item__characteristics">
+                                            <ul>
+                                                <li>
+                                                    <p class="room">
+                                                        1к
+                                                    </p>
+                                                    <p class="value">
+                                                        от 28.83 м2 до 40.22 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        2к
+                                                    </p>
+                                                    <p class="value">
+                                                        55.89 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        3к
+                                                    </p>
+                                                    <p class="value">
+                                                        74.58 м2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="planirovka-slider__item__btn">
+                                        персональное предложение
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="planirovka-slider__item">
+                                    <div class="planirovka-slider__item__content">
+                                        <div class="planirovka-slider__item__header">
+                                            <p class="corp">
+                                                корпус 5
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    2 подъезд
+                                                </li>
+                                                <li>
+                                                    2-10 этаж
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="planirovka-slider__item__img">
+                                            <img src="assets/images/plan-main.png" alt="">
+                                        </div>
+                                        <div class="planirovka-slider__item__characteristics">
+                                            <ul>
+                                                <li>
+                                                    <p class="room">
+                                                        1к
+                                                    </p>
+                                                    <p class="value">
+                                                        от 28.83 м2 до 40.22 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        2к
+                                                    </p>
+                                                    <p class="value">
+                                                        55.89 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        3к
+                                                    </p>
+                                                    <p class="value">
+                                                        74.58 м2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="planirovka-slider__item__btn">
+                                        персональное предложение
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="planirovka-slider__item">
+                                    <div class="planirovka-slider__item__content">
+                                        <div class="planirovka-slider__item__header">
+                                            <p class="corp">
+                                                корпус 5
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    2 подъезд
+                                                </li>
+                                                <li>
+                                                    2-10 этаж
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="planirovka-slider__item__img">
+                                            <img src="assets/images/plan-main.png" alt="">
+                                        </div>
+                                        <div class="planirovka-slider__item__characteristics">
+                                            <ul>
+                                                <li>
+                                                    <p class="room">
+                                                        1к
+                                                    </p>
+                                                    <p class="value">
+                                                        от 28.83 м2 до 40.22 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        2к
+                                                    </p>
+                                                    <p class="value">
+                                                        55.89 м2
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="room">
+                                                        3к
+                                                    </p>
+                                                    <p class="value">
+                                                        74.58 м2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="planirovka-slider__item__btn">
+                                        персональное предложение
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="three-form">
+        <div class="container">
+            <div class="three-form__wrap">
+                <div class="three-form__left">
+                    <h2 class="three-form__title">
+                        скачайте каталог с&nbsp;планировочными решениями
+                    </h2>
+                    <div class="three-form__text">
+                        Заполните форму и&nbsp;получите каталог с&nbsp;планировками квартир
+                    </div>
+                </div>
+                <div class="three-form__right">
+                    <form action="">
+                        <div class="three-form__form-row">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Телефон">
+                        </div>
+                        <div class="three-form__form-bottom">
+                            <button>
+                                скачать каталог
+                            </button>
+                            <div class="three-form__form-policy">
+                                Нажимая на кнопку, я даю согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="commercial-premises">
+        <div class="container">
+            <div class="commercial-premises__wrap">
+                <div class="commercial-premises__left">
+                    <h2 class="commercial-premises__title">
+                        Коммерческие помещения
+                        для&nbsp;вашего бизнеса
+                    </h2>
+                    <div class="commercial-premises__img-mob">
+                        <img src="assets/images/commercial-premises.png" alt="">
+                    </div>
+                    <div class="commercial-premises__content">
+                        <div class="commercial-premises__text">
+                            На первых этажах здания предусмотрены коммерческие помещения под разные види бизнеса:
+                            продуктовые и продовольственные магазины, аптеки, кафе, рестораны, пекарни, салоны красоты,
+                            обучающие секции, фитнес-клубы и т.д.
+                        </div>
+                        <a href="" class="commercial-premises__btn">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="commercial-premises__right">
+                    <img src="assets/images/commercial-premises.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="media">
+        <div class="container">
+            <div class="media__wrap">
+                <div class="media__header">
+                    <h1 class="media__title">
+                        медиа
+                    </h1>
+                    <div class="media__btn">
+                        <div class="radio-item">
+                            <input type="radio" class="radio-input" id="news" name="media" value="новости" checked>
+                            <label for="news" class="radio-label">новости</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" class="radio-input" id="akcii" name="media" value="акции">
+                            <label for="akcii" class="radio-label">акции</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="media__main">
+                    <div class="swiper media__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="media__item">
+                                    <div class="media__item__img">
+                                        <img src="assets/images/media.png" alt="">
+                                    </div>
+                                    <div class="media__item__content">
+                                        <div class="media__item__info">
+                                            <div class="media__item__name">
+                                                <p>
+                                                    новость дня!
+                                                </p>
+                                                <p>
+                                                    материнский капитал на покупку квартиры!
+                                                </p>
+                                            </div>
+                                            <p class="media__item__date">
+                                                12.11.2024
+                                            </p>
+                                        </div>
+                                        <div class="media__item__text">
+                                            Мы рады сообщить, что в рамках нашей новой акции материнский капитал на
+                                            покупку квартиры
+                                            удваивается! Теперь ваши возможности для приобретения нового жилья стали
+                                            вдвое больше.
+                                            🏠
+                                        </div>
+                                        <p class="media__item__date_mob">
+                                            12.11.2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="media__item">
+                                    <div class="media__item__img">
+                                        <img src="assets/images/media.png" alt="">
+                                    </div>
+                                    <div class="media__item__content">
+                                        <div class="media__item__info">
+                                            <div class="media__item__name">
+                                                <p>
+                                                    новость дня!
+                                                </p>
+                                                <p>
+                                                    материнский капитал на покупку квартиры!
+                                                </p>
+                                            </div>
+                                            <p class="media__item__date">
+                                                12.11.2024
+                                            </p>
+                                        </div>
+                                        <div class="media__item__text">
+                                            Мы рады сообщить, что в рамках нашей новой акции материнский капитал на
+                                            покупку квартиры
+                                            удваивается! Теперь ваши возможности для приобретения нового жилья стали
+                                            вдвое больше.
+                                            🏠
+                                        </div>
+                                        <p class="media__item__date_mob">
+                                            12.11.2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="media__item">
+                                    <div class="media__item__img">
+                                        <img src="assets/images/media.png" alt="">
+                                    </div>
+                                    <div class="media__item__content">
+                                        <div class="media__item__info">
+                                            <div class="media__item__name">
+                                                <p>
+                                                    новость дня!
+                                                </p>
+                                                <p>
+                                                    материнский капитал на покупку квартиры!
+                                                </p>
+                                            </div>
+                                            <p class="media__item__date">
+                                                12.11.2024
+                                            </p>
+                                        </div>
+                                        <div class="media__item__text">
+                                            Мы рады сообщить, что в рамках нашей новой акции материнский капитал на
+                                            покупку квартиры
+                                            удваивается! Теперь ваши возможности для приобретения нового жилья стали
+                                            вдвое больше.
+                                            🏠
+                                        </div>
+                                        <p class="media__item__date_mob">
+                                            12.11.2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="media__btn-more">
+                    все новости
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="four-form">
+        <div class="container">
+            <div class="four-form__wrap">
+                <h2 class="four-form__title">
+                    остались вопросы?
+                </h2>
+                <div class="four-form__text">
+                    Оставьте заявку на&nbsp;обратный звонок и&nbsp;наш менеджер поможет вам с&nbsp;выбором
+                    и&nbsp;ответит на&nbsp;все вопросы
+                </div>
+                <div class="four-form__form">
+                    <form action="">
+                        <div class="four-form__form-row">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Телефон">
+                        </div>
+                        <button>
+                            Отправить
+                        </button>
+                        <div class="four-form__form-policy">
+                            Нажимая на кнопку, я даю согласие на обработку персональных данных
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__navigation">
+                    <div class="footer__top">
+                        <div class="col-left">
+                            <p class="col-left__name">
+                                Офис продаж
+                            </p>
+                            <div class="col-left__content">
+                                <p class="address">
+                                    Краснодар, ул. Фадеева, 112
+                                </p>
+                                <div class="col-left__content__time">
+                                    <p>
+                                        пн-пт: 09:00 - 18:00
+                                    </p>
+                                    <p>
+                                        сб-вс: 10:00 - 19:00
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-center">
+                            <a href="" class="footer__logo">
+                                <img src="assets/images/footer_logo.svg" alt="">
+                            </a>
+                            <div class="col-center__line"></div>
+                        </div>
+                        <div class="col-right">
+                            <a href="" class="footer__tel">
+                                +7 800 256 56 56
+                            </a>
+                            <button class="footer__btn">
+                                заказать звонок
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__bottom__line"></div>
+                        <div class="footer__bottom_left">
+                            <p class="name">
+                                Мы в социальных сетях
+                            </p>
+                            <div class="footer__socies__content">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M30.9345 12.7293L27.4635 28.8531C27.2015 29.9909 26.5188 30.2741 25.5486 29.7384L20.2597 25.8994L17.708 28.3174C17.4254 28.5958 17.1897 28.828 16.645 28.828L17.0254 23.5227L26.8269 14.7985C27.2532 14.4246 26.734 14.2166 26.1647 14.5913L14.0474 22.1074L8.83075 20.4987C7.69623 20.1499 7.6757 19.3811 9.06734 18.8446L29.4713 11.1011C30.4161 10.7523 31.2425 11.3083 30.9345 12.7301V12.7293Z"
+                                                    fill="white" fill-opacity="0.8" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M29.5586 19.5571C29.5604 19.5571 29.5617 19.5571 29.5634 19.5571C29.6852 19.5571 29.8014 19.506 29.8839 19.4165C29.9677 19.3257 30.0092 19.2039 29.9983 19.0808C29.5599 14.2593 25.7429 10.4406 20.9212 10.0014C20.7989 9.9918 20.6758 10.0315 20.585 10.1158C20.4942 10.1996 20.4436 10.318 20.4449 10.4415C20.5208 16.8492 21.3661 19.4676 29.5586 19.5571ZM29.5586 20.4426C21.3661 20.5321 20.5213 23.1504 20.4453 29.5581C20.444 29.6817 20.4946 29.8 20.5855 29.8839C20.6667 29.9585 20.7728 30 20.8819 30C20.895 30 20.9085 29.9996 20.9216 29.9983C25.7433 29.559 29.5604 25.7408 29.9983 20.9189C30.0092 20.7958 29.9681 20.674 29.8839 20.5831C29.7996 20.4923 29.6822 20.4474 29.5586 20.4426ZM19.0495 10.0036C14.2432 10.4555 10.4383 14.2732 10.0022 19.0816C9.99124 19.2048 10.0323 19.3266 10.1165 19.4174C10.1991 19.5069 10.3156 19.5575 10.437 19.5575C10.4387 19.5575 10.4405 19.5575 10.4422 19.5575C18.6077 19.4637 19.4508 16.8466 19.5276 10.4433C19.5289 10.3197 19.4778 10.2009 19.387 10.1171C19.2953 10.0333 19.1727 9.99224 19.0495 10.0036ZM10.4418 20.4421C10.306 20.4268 10.1995 20.4915 10.1161 20.5823C10.0323 20.6731 9.9908 20.7949 10.0017 20.918C10.4379 25.7264 14.2432 29.5442 19.0495 29.9961C19.0631 29.9974 19.077 29.9978 19.0906 29.9978C19.1997 29.9978 19.3054 29.9568 19.3866 29.8821C19.4774 29.7983 19.5285 29.6795 19.5272 29.556C19.4503 23.153 18.6077 20.536 10.4418 20.4421Z"
+                                                    fill="white" fill-opacity="0.8" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M29.0904 22.2583C27.1304 20.34 27.3806 20.6319 29.7577 17.3374C31.1755 15.3357 31.7594 14.0847 31.5926 13.5426C31.5091 13.2089 30.3832 13.2923 30.3832 13.2923H26.8802C26.8802 13.2923 26.3381 13.2923 26.1296 13.6677C25.7543 14.3766 25.5874 15.2523 24.8368 16.5451C23.2521 19.3391 22.6266 19.506 22.3764 19.3391C21.7926 18.9221 21.9177 17.7128 21.9177 16.837C21.9177 14.1264 22.293 13.0004 21.167 12.6668C20.9168 12.5834 20.7083 12.5834 20.333 12.5417C19.8743 12.5 19.4155 12.5 18.9985 12.5C17.956 12.5 17.1636 12.5417 16.6215 12.7919C16.2045 13.0004 15.9125 13.4591 16.1211 13.5009C16.3713 13.5426 16.8717 13.6677 17.1636 14.043C17.5389 14.5434 17.4972 15.7111 17.4972 15.7111C17.4972 15.7111 17.7057 18.9221 16.9968 19.2974C16.5381 19.5894 15.8708 19.0055 14.4947 16.4617C13.7857 15.1689 13.7023 14.2932 13.2436 13.7094C12.9517 13.334 12.4096 13.2089 12.4096 13.2089H9.0734C9.0734 13.2089 8.48957 13.1672 8.40617 13.334C8.23936 13.5426 8.40617 13.9596 8.40617 13.9596C8.40617 13.9596 11.0334 20.4234 13.9943 23.6762C16.6215 26.7621 19.7074 26.5953 19.7074 26.5953C19.7074 26.5953 21.5006 26.6787 21.7508 26.22C21.9177 26.0532 21.9594 25.5528 21.9594 25.5528C21.9594 25.5528 21.9177 23.5511 22.7934 23.2591C23.6691 22.9672 24.7534 25.1774 25.9211 26.0115C26.7968 26.6787 27.047 26.5953 27.464 26.5953C28.2981 26.5953 30.5917 26.5953 30.5917 26.5953C30.5917 26.5953 32.2181 26.4285 31.4674 25.0523C31.3423 24.9689 30.967 24.0932 29.0904 22.2583Z"
+                                                    fill="white" fill-opacity="0.8" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__bottom_right">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            квартиры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            коммерческая недвижимость
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            о компании
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            галерея
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            медиа
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__policy">
+                    <div class="footer__policy_top">
+                        <p class="footer__policy__copyright">
+                            2025
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.528 10.104H7.2C3.752 10.104 3.216 8.176 3.216 7.12V6.888C3.216 5.808 3.68 3.944 7.2 3.944H7.528C10.976 3.944 11.512 5.592 11.512 6.288V6.376H9.536C9.488 6.216 9.248 5.384 7.36 5.384C5.576 5.384 5.168 6.184 5.168 6.928V7.024C5.168 7.728 5.64 8.656 7.376 8.656C9.304 8.656 9.496 7.736 9.544 7.6H11.52V7.688C11.52 8.44 10.928 10.104 7.528 10.104Z"
+                                    fill="white" fill-opacity="0.8" />
+                                <circle cx="7" cy="7" r="6.5" stroke="white" />
+                            </svg>
+                            ЖК «Имена»
+                        </p>
+                        <a href="" class="footer__policy__link">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="" class="footer__policy__link">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </div>
+                    <div class="footer__policy__text">
+                        Вся предаставленная на&nbsp;сайте информация, касающаяся жилого комплекса, носит исключительно
+                        информационных характер, никакая информация, материалы, опубликованные на&nbsp;нем, н&nbsp;при
+                        каких
+                        условиях не&nbsp;являются публичной офертой, определяемой положениями статьи 437 Гражданского
+                        кодекса
+                        Российской Федерации. Визуализация и&nbsp;ланировки, представленные на&nbsp;настоящем сайте
+                        являются
+                        ориентировочными
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-blur"></div>
+    <div class="feedback-popup offer-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    получить персональное предложение
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup catalog-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    скачать каталог планировочных решений
+                </div>
+                <div class="feedback-popup__text">
+                    Заполните форму и получите каталог с планировками и ценами
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup call-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    закажите обратный звонок
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup bron-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    закажите обратный звонок
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <img src="assets/images/menu3.png" alt="" class="mobile-menu__bg">
+        <img src="assets/images/menu3_mob.png" alt="" class="mobile-menu__bg_mob">
+        <button class="mobile-menu__close mobile-menu__close__desc">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36 12L12 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M12 12L36 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+
+        </button>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__wrap">
+                <div class="mobile-menu__header">
+                    <a href="" class="mobile-menu__logo">
+                        <img src="assets/images/header_logo.svg" alt="">
+                    </a>
+                    <div class="mobile-menu__header__right">
+                        <a href="" class="mobile-menu__header__tel">
+                            +7 899 789 85 85
+                        </a>
+                        <button class="mobile-menu__close">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 12L12 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                                <path d="M12 12L36 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="mobile-menu__left-img">
+                    <img src="assets/images/menu1.png" alt="">
+                </div>
+                <div class="mobile-menu__right-img">
+                    <img src="assets/images/menu2.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                коммерческая недвижимость
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                о компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                галерея
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                медиа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

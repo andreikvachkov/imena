@@ -12,12 +12,22 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+
+
 
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body >
     <header>
         <div class="container">
             <div class="header__wrap">
@@ -31,9 +41,9 @@
                     <a href="" class="header__tel-btn">
                         +7 899 789 85 85
                     </a>
-                    <a href="" class="header__feedback-btn">
+                    <button class="header__feedback-btn">
                         Заказать звонок
-                    </a>
+                    </button>
                     <button class="header__menu-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                             <path d="M5.625 22.5H39.375" stroke="white" stroke-width="2" stroke-linecap="square"
@@ -117,7 +127,7 @@
         </div>
     </section>
 
-    <footer>
+        <footer>
         <div class="container">
             <div class="footer__wrap">
                 <div class="footer__navigation">
@@ -269,6 +279,214 @@
             </div>
         </div>
     </footer>
+    <div class="popup-blur"></div>
+    <div class="feedback-popup offer-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    получить персональное предложение
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup catalog-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    скачать каталог планировочных решений
+                </div>
+                <div class="feedback-popup__text">
+                    Заполните форму и получите каталог с планировками и ценами
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup call-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    закажите обратный звонок
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-popup bron-popup">
+        <button class="feedback-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__container">
+            <div class="feedback-popup__wrap">
+                <div class="feedback-popup__title">
+                    закажите обратный звонок
+                </div>
+                <div class="feedback-popup__text">
+                    Оставьте заявку на обратный звонок и наш менеджер ответит на все ваши вопросы
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <div class="form__bottom">
+                        <button>
+                            отправить
+                        </button>
+                        <div class="form-text">
+                            Нажимая на кнопку даю свое согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <img src="assets/images/menu3.png" alt="" class="mobile-menu__bg">
+        <img src="assets/images/menu3_mob.png" alt="" class="mobile-menu__bg_mob">
+        <button class="mobile-menu__close mobile-menu__close__desc">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36 12L12 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                <path d="M12 12L36 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+
+        </button>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__wrap">
+                <div class="mobile-menu__header">
+                    <a href="" class="mobile-menu__logo">
+                        <img src="assets/images/header_logo.svg" alt="">
+                    </a>
+                    <div class="mobile-menu__header__right">
+                        <a href="" class="mobile-menu__header__tel">
+                            +7 899 789 85 85
+                        </a>
+                        <button class="mobile-menu__close">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 12L12 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                                <path d="M12 12L36 36" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="mobile-menu__left-img">
+                    <img src="assets/images/menu1.png" alt="">
+                </div>
+                <div class="mobile-menu__right-img">
+                    <img src="assets/images/menu2.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                коммерческая недвижимость
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                о компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                галерея
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                медиа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
