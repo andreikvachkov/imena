@@ -442,6 +442,10 @@ header {
         padding: 1.25rem 0;
         width: 100%;
         display: block;
+        position: relative;
+        left: 0;
+        transform: translateX(0) translateY(0);
+        top: 0;
     }
     .two-section__left__title .line {
         height: 1.25rem;
