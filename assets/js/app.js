@@ -572,7 +572,7 @@ const swiper_ad_page7 = new Swiper('.advantages__page-7__swiper', {
     }
 });
 
-window.addEventListener('load', () => {
+
 
     const lenis = new Lenis({
         duration: 1.8,
@@ -912,4 +912,3 @@ window.addEventListener('load', () => {
         });
     });
 
-});
