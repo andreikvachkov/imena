@@ -5067,6 +5067,7 @@ footer {
 }
 .genplan__info {
     display: none;
+    pointer-events: none;
 }
 @media (max-width: 768px) {
     .genplan {
